@@ -7,6 +7,7 @@ public class AppControl : Core.MonoSingleton<AppControl>
     private Flock _flock;
     
 	void Start () {
+        Application.targetFrameRate = 60;
         _flock = new Flock();
         InitFlock();
 	}
